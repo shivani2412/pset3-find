@@ -23,6 +23,7 @@ bool search(int value, int values[], int n)
         int high=n;
         int mid;
         while(low <= high)
+        // start of while loop
         {
             mid = (low + high) / 2; 
             if (values[mid] == value)
@@ -42,6 +43,7 @@ bool search(int value, int values[], int n)
         
          
        }
+       // end of while loop
          // TODO: ipleent a searching algorith
     
  }
@@ -59,6 +61,7 @@ void sort(int values[], int n)
         {  
           
             if (values[j] > values[j + 1])
+            // comapring the values
             {
                 temp = values[j];
                 values[j] = values[j + 1];
@@ -66,6 +69,6 @@ void sort(int values[], int n)
             }
       }
       }
-      // TODO: ipleent an O(n^2) sorting algorith
+      // TODO: ipleent an O(n^2) sorting algorithm
     return;
 }
