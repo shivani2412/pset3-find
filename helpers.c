@@ -19,25 +19,25 @@ bool search(int value, int values[], int n)
     }
     if (n > 0)
     {
-        int low=0;
-        int high=n;
+        int lower=0;
+        int higher=n;
         int mid;
-        while(low <= high)
+        while(lower <= higher)
         // start of while loop
         {
-            mid = (low + high) / 2; 
+            mid = (lower + higher) / 2; 
             if (values[mid] == value)
             {
                 return true;
             }
             if (values[mid] > value)
             {
-                high = mid - 1;
+                higher = mid - 1;
              
          }
             if (values[mid] < value)
             {
-                low = mid + 1;
+                lower = mid + 1;
              
          }
         
