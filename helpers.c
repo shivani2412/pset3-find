@@ -44,7 +44,7 @@ bool search(int value, int values[], int n)
          
        }
        // end of while loop
-         // TODO: ipleent a searching algorith
+         // TODO: implment a searching algorith
     
  }
     return false;
@@ -54,7 +54,7 @@ bool search(int value, int values[], int n)
  */
 void sort(int values[], int n)
 {   
-    int temp;
+    int temp_var;
     for(int i=0;i < n - 1;i++)
     {
         for(int j=0;j < n - i - 1;j++)
@@ -63,9 +63,9 @@ void sort(int values[], int n)
             if (values[j] > values[j + 1])
             // comapring the values
             {
-                temp = values[j];
+                temp_var = values[j];
                 values[j] = values[j + 1];
-                values[j + 1] = temp;
+                values[j + 1] = temp_var;
             }
       }
       }
